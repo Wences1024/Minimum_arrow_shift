@@ -30,7 +30,8 @@ if __name__ == "__main__":
     "^^<<>>^^", #Expected 8
     "vvvv", #Expected 0
     "^<^v<<^>", #Expected 8 
-    "^^^>>>>>vvv<<<<" #Expected 20
+    "^^^>>>>>vvv<<<<", #Expected 20
+    "vv>>vv", #Expected 4
     ]
 
     for i in test_cases:
