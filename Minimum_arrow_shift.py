@@ -17,8 +17,11 @@ class Arrow:
 
 
 if __name__ == "__main__":
+    #Clean the terminal at the beginning of the script!
     os.system('cls||clear')
+    #Create the object
     Test = Arrow()
+    #Cases to test our model
     test_cases = [
     "vv>>vv", #Expected 4
     "<<<<<", #expected 0
