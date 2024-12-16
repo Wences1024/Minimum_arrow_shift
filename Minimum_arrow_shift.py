@@ -2,16 +2,17 @@ import os
 
 class Arrow:
     def solution(self, A : list) -> int:
+        #Count how many times the arrows appear
         up = A.count('^')
         down = A.count('v')
         left = A.count('<')
         right = A.count('>')
-
+        #The total amount of each movements depends on the specific moves per direction
         total_up = right + 2*down + 3*left
         total_down = left  + 2*up + 3*right
         total_left = up + 2*right + 3*down
         total_right = down + 2*left + 3*up
-
+        #Return the minimum movements calculated
         return min(total_up,total_down,total_left,total_right)
 
 
