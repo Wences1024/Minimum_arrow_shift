@@ -1,28 +1,3 @@
-"""
-You are given a string S representing a sequence of N arrows. Each arrow in the sequence points in one of the four directions: up("^"), down("v"), lef("<") or right(">"). In one move, you can rotate an arrow as shown in the image below:
-
-^ ----- <
-> ----- ^
-v ------ >
-< ------ v
-
-
-Write a function:
-def solution(S)
-
-that, given a string S of length N denoting the directions of the arrows, returns the minimum number of moves required to make all of the arrows point in the same direction.
-
-Example: For S ="vv>>vv" the function should return 4. It is optimal to rotate arrows so that all of the point right
-
-
-Asume that:
-
-- N is an integer within the range [1..100]
-string S is made only the following characters: '<','^','>' and/or 'v'
-
-In your solution, focus on correctness. The performance of your solution will not be the focus on the assessment
-
-"""
 import os
 
 class Arrow:
@@ -46,11 +21,11 @@ if __name__ == "__main__":
     test_cases = [
     "vv>>vv", #Expected 4
     "<<<<<", #expected 0
-    "<<^>>", #expected 5........v -> 10, ^ -> 8 , < -> 5, > -> 7
+    "<<^>>", #expected 5
     "<", #Expected 0
-    "^^<<>>^^", #Expected 8 ........ v -> 16, ^ ->8, > -> 16, < -> 8
+    "^^<<>>^^", #Expected 8
     "vvvv", #Expected 0
-    "^<^v<<^>", #Expected 8 ......... v -> 12, ^ -> 12, < -> 8,  > -> 16
+    "^<^v<<^>", #Expected 8 
     "^^^>>>>>vvv<<<<" #Expected 20
     ]
 
